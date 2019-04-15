@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Insert title here</title>
+</head>
+<body>
+<header>
+<h3 style="text-align: center;">Resume</h3>
+<h5 style="text-align: right;">Vrushali Kaluram Undre<br>
+vrushalikundre12@gmail.com<br>
+9028645168</h5>
+<hr>
+<h3>Career Objective :</h3><hr>
+<p>Seeking a challenging role in  the fast growing organization. The organization should provide a good growth potential and wide exposure to the latest technologies, fully utilizing my skills and ability.
+</p>
+<h3>Qualification :</h3><hr>
+<table border=1>
+
+<tr>
+<th>Degree</th><th>Year of passing</th><th>University/Board</th><th>Percentage(%)</th><th>Class</th></tr>
+<tr><td>M.Sc.(Comp.Sci.)</td><td>2015</td><td>Savitribai Phule Pune University</td><td>64.33</td><td>First Class</td></tr>
+<tr><td>B.Sc.(Comp.Sci.)</td><td>2013</td><td>Savitribai Phule Pune University</td><td>55.00</td><td>Higher Second Class</td></tr>
+<tr><td>H.S.C</td><td>2010</td><td>Maharashtra State Board</td><td>57.83</td><td>Higher Second Class</td></tr>
+<tr><td>S.S.C</td><td>2008</td><td>Maharashtra State Board</td><td>82.61</td><td>First Class with Distinction</td></tr>
+</table>
+
+<h3>Achievements : </h3><hr>
+<p>"Best Employee in Supporting Role Of the Year Award" and "Best Employee in Supporting Role Of the Year Award" at Vincalabs Infotech Pvt. Ltd.
+
+<h3>Work Experience : </h3><hr>
+<table border=1>
+
+<tr>
+<th></th><th>Company Name</th><th>Designation</th><th>Working From</th><th>Worked Till</th></tr>
+<tr><td>1</td><td>Vincalabs Infotech Pvt. Ltd.</td><td>Software Developer</td><td>June 2017</td><td>Till date</td></tr>
+
+</table>
+
+<h3>Projects :</h3><hr>
+<h5>1. Vishwakarma Seva sangh :</h5>
+<p>Application to maintain records and events of Vishwakarma  community.</p>
+
+<h5>1. CA Project :</h5>
+<p>Application to Create Financial Statement For Estimated Year Excel file.</p>
+<h5>2. Timelog Project :</h5>
+<p>Application For Employees Daily Acitivities Sheet.</p>
+
+
+<h3>Personal Details :</h3><hr>
+<table>
+
+<tr>
+
+<tr><td>Name </td><td>:</td><td>Vrushali Kaluram Undre</td></tr>
+
+<tr><td>Mother Name </td><td>:</td><td>Suman</td></tr>
+<tr><td>Brother and sisters Name </td><td>:</td><td>1. Atul</td></tr>
+<tr><td></td><td></td><td>2.Priyanka</td></tr>
+<tr><td>Mobile Number </td><td>:</td><td>9028645168</td></tr>
+<tr><td>Alt Mobile Number </td><td>:</td><td>9011370842</td></tr>
+<tr><td>Email </td><td>:</td><td>vrushalikundre12@gmail.com</td></tr>
+</table>
+
+<h3>Hobbies :</h3><hr>
+<ul><li>Reading Books</li>
+<li>Traveling</li>
+<li>Listening Music</li>
+<li>Mehandi and rangoli</li>
+</ul>
+
+</header>
+</body>
+</html>
