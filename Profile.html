@@ -1,75 +1,475 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="ISO-8859-1">
 
-<title>Insert title here</title>
+    <script src="https://use.fontawesome.com/59a8f26532.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vrushali Kaluram Undre | Software Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Artifika|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style type="text/css">
+        /* Global Styles
+====================*/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+a {
+  color: #EF233c;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: 'Artifika', serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 25px;
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.btn {
+  text-decoration: none;
+  background: #EF2336;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+/* Header Styles and footer
+====================*/
+header, footer {
+  background-color: #2B2D42;
+  color: #8D99AE;
+}
+
+/* Header styles  */
+
+header {
+  padding-top: 50px;
+  position: relative;
+}
+
+nav {
+  text-align: center;
+  background-color: #fff;
+  position: fixed; /* if you dont set a width for a positioned element, it will only be as wide as its content*/
+  top: 0;
+  width: 100%;  /*Can also be achieved by setting left: 0 and right:0 */
+  /*left: 0;
+  right: 0;*/
+}
+
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+header h1, header h2 {
+  color: #EDF2F4;
+  margin: 0;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+
+/* Footer styles */
+footer {
+  text-align: center;
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Education Styles
+====================*/
+.education {
+  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+                              url(http://freelinkedinbackgrounds.com/wp-content/uploads/2015/01/Technology-008.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p + h3 {
+  margin-top: 30px;
+}
+
+/* Work Experience Styles
+====================*/
+
+.work,.work1 {
+  background-color: #EDF2F4
+}
+
+h3 ~ p {
+  margin: 0;
+}
+
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+.job-decription {
+  margin-bottom: 25px;
+}
+
+/* Media Querie */
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 35%;
+    float: left;
+  }
+
+  .col-wide {
+    width: 62%;
+    float: right;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width:899px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;    
+  }
+}
+
+    </style>
 </head>
 <body>
-<header>
-<h3 style="text-align: center;">Resume</h3>
-<h5 style="text-align: right;">Vrushali Kaluram Undre<br>
-vrushalikundre12@gmail.com<br>
-9028645168</h5>
-<hr>
-<h3>Career Objective :</h3><hr>
-<p>Seeking a challenging role in  the fast growing organization. The organization should provide a good growth potential and wide exposure to the latest technologies, fully utilizing my skills and ability.
-</p>
-<h3>Qualification :</h3><hr>
-<table border=1>
+    <!-- // Intro -->
+    <header id="about">
+      <!--Putting the download link before the navbar make it appear below the navbar on the page stack  -->
+      <!--<a class="btn download" href="#" download>Download PDF</a>-->
+      <nav>
+        <a href="#about" title="">About</a>
+        <a href="#work" title="">Work Experience</a>
+        <a href="#education" title="">Technical Profile</a>
+        <a href="#Technical" title="">Education</a>
+        <a href="#work1" title="">Personal Deatils</a>
+        <a href="#AWARDS" title="">AWARDS</a>
+        <a href="#contact" title="">Contact</a>
+      </nav>
+      <div class="content-wrap">
+        <img class="profile-img col-narrow" src="http://www.trishaomabu.com/wp-content/uploads/2018/05/profileImg.jpg">
+        <!-- Use a square profile image to get max effect of 50% border radius -->
+        <div class="col-wide">
+        <h1>Vrushali Kaluram Undre.</h1>
+        <h2>Software Developer</h2>
+        <p>2.10 years of experience in Software Developement.</p>
+        <!--<p>Knowledge of Amazon EC2 and AWS components (EC2,Security Groups, Route 53, VPC).</p>
+        <p>Excellent in Functional, Integration,Regression and System Testing.</p>
+        <p>Strong in Test Planning, Test Design, Test Execution,Defect reporting & Tracking and building Test Environment.</p>
+        <p>Good knowledge of Jenkins.</p>
+        <p>Good exposure in  SDLC and STLC.</p>
+        <p>Good understanding of Windows and Web applications.</p>
+        <p>Strong team player to find defects in Software application against Requirement Specification.</p>
+        <p>Self-motivated, energetic and highly ethical in all work related assignments thus able to immediately contribute to corporate goals and objects.</p>-->
+        <!--<h2>Objectives</h2>
+        <p>I am a diligent, hardworking and a sincere person with a never ending urge to learn new things. With the right kind of attitude and perseverance I am determined to carve a successful and satisfying career in the field of Information Technology</p>-->
+        </div>
+      </div>
+    </header>
 
-<tr>
-<th>Degree</th><th>Year of passing</th><th>University/Board</th><th>Percentage(%)</th><th>Class</th></tr>
-<tr><td>M.Sc.(Comp.Sci.)</td><td>2015</td><td>Savitribai Phule Pune University</td><td>64.33</td><td>First Class</td></tr>
-<tr><td>B.Sc.(Comp.Sci.)</td><td>2013</td><td>Savitribai Phule Pune University</td><td>55.00</td><td>Higher Second Class</td></tr>
-<tr><td>H.S.C</td><td>2010</td><td>Maharashtra State Board</td><td>57.83</td><td>Higher Second Class</td></tr>
-<tr><td>S.S.C</td><td>2008</td><td>Maharashtra State Board</td><td>82.61</td><td>First Class with Distinction</td></tr>
-</table>
+    <main>
+        <!-- // Work Experience -->
+        <section id="work" class="work">
+          <div class="content-wrap">
 
-<h3>Achievements : </h3><hr>
-<p>"Best Employee in Supporting Role Of the Year Award" and "Best Employee in Supporting Role Of the Year Award" at Vincalabs Infotech Pvt. Ltd.
+            <h2>Work Experience</h2>
 
-<h3>Work Experience : </h3><hr>
-<table border=1>
+            <!-- Job Details: copy this whole block to add more jobs -->
+            <div class="col-narrow">
+              <h3>Software Developer</h3>
+              <p class="uppercase">Vincalabs Infotech Pvt. Ltd. </p>
+              <p>June 2016 to present</p>
+            </div>
+            <div class="col-wide job-description">
 
-<tr>
-<th></th><th>Company Name</th><th>Designation</th><th>Working From</th><th>Worked Till</th></tr>
-<tr><td>1</td><td>Vincalabs Infotech Pvt. Ltd.</td><td>Software Developer</td><td>June 2017</td><td>Till date</td></tr>
+            <!-- Add as many paragraphs as you need. -->
+            <p class="justified">
+                <p style="text-decoration: underline;">PROJECT 1 : Vishwakarma Seva sangh </p>
+                Description : Application to maintain records and events of Vishwakarma community.
+            </p>
 
-</table>
+            <!-- This list can be deleted if you don't want to use it. -->
+            <!--<p>Key Deliverables:</p>
+            <ul>
+                <li>Achieved 80% Automation using Selenium with Python.</li>
+                <li>Preparation of test cases</li>
+                <li>Setting up test environment</li>
+                <li>Reporting defects in defect tracking tool JIRA</li>
+                <li>Involved in Build Acceptance, Functional, Integration</li>
+                <li>Was actively involved with developers to clarify and resolve defect issues.</li>
+           </ul>-->
 
-<h3>Projects :</h3><hr>
-<h5>1. Vishwakarma Seva sangh :</h5>
-<p>Application to maintain records and events of Vishwakarma  community.</p>
+           <p class="justified">
+                <p style="text-decoration: underline;">PROJECT 2: CA Project </p>
+                Description : Application to Create Financial Statement For Estimated Year Excel file.
+            </p>
 
-<h5>2. CA Project :</h5>
-<p>Application to Create Financial Statement For Estimated Year Excel file.</p>
-<h5>3. Timelog Project :</h5>
-<p>Application For Employees Daily Acitivities Sheet.</p>
+            <!-- This list can be deleted if you don't want to use it. -->
+            <!--<p>Key Deliverables:</p>
+            <ul>
+                <li>Achieved 70 % Automation using Selenium with Python</li>
+                <li>Preparation of test cases</li>
+                <li>Setting up test environment in Linux environment</li>
+                <li>Reporting defects in defect tracking tool JIRA</li>
+                <li>Involved in Build Acceptance, Functional, Integration</li>
+                <li>Was actively involved with developers to clarify and resolve defect issues.</li>
+                <li>Executed test cases for functional, validation, end-to-end and regression testing</li>
+           </ul>-->
+
+            <p class="justified">
+                <p style="text-decoration: underline;">PROJECT 3: Timelog Project </p>
+                Description : Application For Employees Daily Acitivities Sheet.
+            </p>
+            </div>
 
 
-<h3>Personal Details :</h3><hr>
-<table>
+            <!-- end of Job Details block. -->
+            </div>
 
-<tr>
+       
 
-<tr><td>Name </td><td>:</td><td>Vrushali Kaluram Undre</td></tr>
 
-<tr><td>Mother Name </td><td>:</td><td>Suman</td></tr>
-<tr><td>Brother and sisters Name </td><td>:</td><td>1. Atul</td></tr>
-<tr><td></td><td></td><td>2.Priyanka</td></tr>
-<tr><td>Mobile Number </td><td>:</td><td>9028645168</td></tr>
-<tr><td>Alt Mobile Number </td><td>:</td><td>9011370842</td></tr>
-<tr><td>Email </td><td>:</td><td>vrushalikundre12@gmail.com</td></tr>
-</table>
+        <header id="education">
+      <!--Putting the download link before the navbar make it appear below the navbar on the page stack  -->
+      <!--<a class="btn download" href="#" download>Download PDF</a>-->
+      <nav>
+        <a href="#about" title="">About</a>
+        <a href="#work" title="">Work Experience</a>
+        <a href="#education" title="">Technical Profile</a>
+        <a href="#Technical" title="">Education</a>
+        <a href="#work1" title="">Personal Deatils</a>
+        <a href="#AWARDS" title="">AWARDS</a>
+        <a href="#contact" title="">Contact</a>
+      </nav>
+      <div class="content-wrap">
+       <!-- <img class="profile-img col-narrow" src="http://www.trishaomabu.com/wp-content/uploads/2018/05/profileImg.jpg">-->
+        <!-- Use a square profile image to get max effect of 50% border radius -->
+        <!--<div class="col-wide">-->
+        <!--<h1>Pranali P. Kolamkar.</h1>-->
+        <h2>Technical Profile</h2>
+        <p><strong> Languages  : </strong> HTML, CSS, Java, JavaScript, Spring, Hibernate, Angular, MySql, C and C++ </p>
+        <p><strong> Database  : </strong> SQL Server 2008 and SQL Server 2012</p>
+        <p><strong> Operating System : </strong> Windows,Linux</p>
+        
+        
+        <!--<h2>Objectives</h2>
+        <p>I am a diligent, hardworking and a sincere person with a never ending urge to learn new things. With the right kind of attitude and perseverance I am determined to carve a successful and satisfying career in the field of Information Technology</p>-->
+        </div>
+      </div>
+    </header>
 
-<h3>Hobbies :</h3><hr>
-<ul><li>Reading Books</li>
-<li>Traveling</li>
-<li>Listening Music</li>
-<li>Mehandi and rangoli</li>
-</ul>
 
-</header>
+        <!-- // Education -->
+        <section id="Technical" class="Technical">
+          <div class="content-wrap">
+
+            <h2>Education</h2>
+
+            <!-- School details: copy this whole block to add more schools. -->
+            <h3>M.Sc.(Comp.Sci.)</h3>
+            <p>From Savitribai Phule Pune University with First Class in 2016</p>
+
+            <!-- Add as many paragraphs as you need. -->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie purus a neque feugiat aliquam. Donec cursus, lacus non condimentum rutrum, velit tortor pretium neque, vitae finibus felis dolor ut neque.</p>
+            <p><a href="https://www.freecodecamp.org/trishachi" title="Free Code Camp Profile" target="_blank">View Profile</a></p>-->
+            <!-- End of school details. -->
+
+            <!-- School details: copy this whole block to add more schools. -->
+            <h3>B.Sc.(Comp.Sci.)</h3>
+            <p>From Savitribai Phule Pune University with Higher Second Class in 2013</p>
+
+            <!-- Add as many paragraphs as you need. -->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie purus a neque feugiat aliquam. Donec cursus, lacus non condimentum rutrum, velit tortor pretium neque, vitae finibus felis dolor ut neque.</p>-->
+
+            <h3>H.S.C</h3>
+            <p>From Maharashtra Board with Higher Second Class in 2010</p>
+
+            <h3>S.S.C</h3>
+            <p>From Maharashtra Board with Distinction in 2008</p>
+            <!-- End of school details. -->
+            </div>
+        </section>
+
+
+
+        <header id="work1">
+      <!--Putting the download link before the navbar make it appear below the navbar on the page stack  -->
+      <!--<a class="btn download" href="#" download>Download PDF</a>-->
+      <nav>
+        <a href="#about" title="">About</a>
+        <a href="#work" title="">Work Experience</a>
+        <a href="#education" title="">Technical Profile</a>
+        <a href="#Technical" title="">Education</a>
+        <a href="#work1" title="">Personal Deatils</a>
+        <a href="#AWARDS" title="">AWARDS</a>
+        <a href="#contact" title="">Contact</a>
+      </nav>
+      <div class="content-wrap">
+       <!-- <img class="profile-img col-narrow" src="http://www.trishaomabu.com/wp-content/uploads/2018/05/profileImg.jpg">-->
+        <!-- Use a square profile image to get max effect of 50% border radius -->
+        <!--<div class="col-wide">-->
+        <!--<h1>Personal Deatils</h1>-->
+        <h2>Personal Deatils</h2>
+        <p><strong> Name : </strong>Vrushali Kaluram Undre.</p>
+        <p><strong> Mob No : </strong>+91-9028645168  /  +91-9011370842</p>
+        <p><strong> Email-Id : </strong><a href="mailto:vrushalikundre12@gmail.com">vrushalikundre12@gmail.com</a></p>
+        <p><strong> Date of Birth : </strong>25th July 1992</p>
+        <p><strong> Permanent Address : </strong>Manjari khurd near ZP school, Shiv nagar, Pune-412307.</p>
+        <p><strong> Gender : </strong>Female</p>
+        <p><strong> Verbal Language Skills : </strong>English,Hindi,Marathi</p>
+        
+        <!--<h2>Objectives</h2>
+        <p>I am a diligent, hardworking and a sincere person with a never ending urge to learn new things. With the right kind of attitude and perseverance I am determined to carve a successful and satisfying career in the field of Information Technology</p>-->
+        </div>
+      </div>
+    </header>
+
+
+
+        <!-- // Work Experience -->
+       <!-- <section id="work1" class="work1">
+          <div class="content-wrap">
+
+            <h2>Personal Deatils</h2>
+
+            <!-- Job Details: copy this whole block to add more jobs --
+            <div class="col-narrow">
+              <!--<h3>Web Designer/Developer</h3>--
+              <p class="uppercase"></p>
+              <!--<p>January 2014 - December 2017</p>--
+            </div>
+            <div class="col-wide job-description">
+
+            <!-- Add as many paragraphs as you need. --
+            <p class="justified"></p>
+
+            <!-- This list can be deleted if you don't want to use it. --
+            <!--<p>Optional list:</p>--
+            <p><strong> Name : </strong>Pranali P. Kolamkar.</p>
+            <p><strong> Mob No : </strong>+91-8446810599  /  +91-8087243597</p>
+            <p><strong> Email-Id : </strong>pranalikolamkar6677@gmail.com</p>
+            <p><strong> Date of Birth : </strong>03rd May 1992</p>
+            <p><strong> Permanent Address : </strong>Sr No: 37, Rukmni Nivas, Plot No-115, Janseva society, Lane No-6, Near Gajanan Mahraj Mandir, Kalepadal, Hadapsar Pune-28.</p>
+            <p><strong> Gender,Marital Status : </strong>Female,Married</p>
+            <P><strong> Verbal Language Skills : </strong>English,Hindi,Marathi</P>
+            <!--<ul>
+                <li>Date of Birth : 03rd May 1992</li>
+                <li>Permanent Address : SrNo: 37, Rukmni Nivas, Plot No-115,Janseva society, Near Gajanan Mahraj Mandir, Kalepadal,Hadapsar Pune-28.</li>
+                <li>Gender,Marital Status : Female,Married</li>
+                <li>Verbal Language Skills : English,Hindi,Marathi</li>
+                <li>Hobbies : Travelling,Playing Chess</li>
+            </ul>--
+            </div>
+            <!-- end of Job Details block. --
+            </div>
+        </section>-->
+
+        <!-- // Education -->
+        <section id="AWARDS" class="AWARDS">
+          <div class="content-wrap">
+
+            <h2>AWARDS AND ACHIEVEMENTS</h2>
+
+            <!-- School details: copy this whole block to add more schools. -->
+            <h3>Best Employee Of the Year.</h3>
+            
+
+            <!-- Add as many paragraphs as you need. -->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie purus a neque feugiat aliquam. Donec cursus, lacus non condimentum rutrum, velit tortor pretium neque, vitae finibus felis dolor ut neque.</p>
+            <p><a href="https://www.freecodecamp.org/trishachi" title="Free Code Camp Profile" target="_blank">View Profile</a></p>-->
+            <!-- End of school details. -->
+
+            <!-- School details: copy this whole block to add more schools. -->
+            <h3>Best Employee in Supporting Role.</h3>
+            
+
+            <!-- Add as many paragraphs as you need. -->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie purus a neque feugiat aliquam. Donec cursus, lacus non condimentum rutrum, velit tortor pretium neque, vitae finibus felis dolor ut neque.</p>-->
+            <!-- End of school details. -->
+            </div>
+        </section>
+    </main>
+
+    <!-- // Footer & contact info -->
+    <footer id="contact">
+      <div class="content-wrap">
+        <h2>Let's Keep in Touch!</h2>
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <div class="contact-info">
+
+            <a href="mailto:vrushalikundre12@gmail.com">Email</a>
+            <a href="https://www.facebook.com/vrushali.undre" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/vrushali-undre-bb79b8112/" target="_blank">Linkedin</a>
+
+           <!-- <a href="http://www.trishaomabu.com" target="_blank"><i class="fa fa-globe fa-lg" aria-hidden="true"></i>
+<span class="sr-only">Website</span></a>
+            <a href="mailto:chisombili.okoye@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+<span class="sr-only">Email</span></a>
+            <a href="https://twitter.com/trishachi" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+<span class="sr-only">Twitter</span></a>
+            <a href="https://www.linkedin.com/in/chisom-trisha-okoye/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+<span class="sr-only">LinkedIn</span></a>
+            <a href="https://github.com/Trishachi" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i>
+<span class="sr-only">Github</span></a>-->
+        </div>
+        <!--<p>Copyright &copy; 2018 by Chisom Trisha Okoye</p>-->
+        </div>
+    </footer>
 </body>
 </html>
